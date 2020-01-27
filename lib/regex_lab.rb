@@ -1,5 +1,9 @@
 def starts_with_a_vowel?(word)
   arr = ["a","e","i","o","u"]
+  first_letter = word[0]
+  arr.each do |letter|
+    return true if letter == first_letter.downcase
+  end
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
