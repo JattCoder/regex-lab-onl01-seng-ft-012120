@@ -20,9 +20,9 @@ def words_five_letters_long(text)
   arr = []
   text_arr = text.split(" ")
   text_arr.each do |word|
-    arr << word if word.length == 6
+    arr << word if word.length == 5
   end
-  return arr
+  return arr.length
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
