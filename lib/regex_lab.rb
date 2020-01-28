@@ -8,7 +8,12 @@ def starts_with_a_vowel?(word)
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
-
+  arr = []
+  text_arr = text.split(" ")
+  text_arr.each do |word|
+    arr << word if word.include?("un") && word.include?("ing")
+  end
+  return arr
 end
 
 def words_five_letters_long(text)
